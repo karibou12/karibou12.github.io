@@ -1,0 +1,209 @@
+body
+{
+    /*background: url("images/fond_index1.jpg");*/
+    background: url(https://lh3.google.com/u/0/d/1TWWpyUwoYfSeffeKiJv9CsH1MBQSjqwm=w1398-h923-iv1);
+    background-size: 100%;
+} 
+
+#main
+{
+    position: fixed;
+    width: 50%;
+    height: 500px;
+    background-color: rgba(169, 180, 175, 0.329);
+    border-radius: 10px;
+    top: 30px;
+    left: 6%;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;  
+    height: 60px;
+    flex-basis: auto; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 10px 10px 0px 0px;
+}
+
+section
+{
+    height: 80%;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+ 
+}
+
+
+
+h1
+{
+   margin: 0px;
+   padding: 0px;
+    font-size: 60px;
+    text-align: center;
+ 
+
+    
+}
+strong
+{
+    font-size: 100px;
+}
+
+nav
+{
+    display: flex;
+    flex-grow: 1;
+    width: 300px;
+    
+}
+
+
+
+ul
+{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    order: inherit;
+    list-style: none;
+    height: 20px;
+    margin-top:40px;
+   }
+
+ul :nth-child(1) { order: 2; }
+
+nav ul li a
+{
+    display: flex;
+    height: 25px;
+    width: 65px;
+    color:rgba(233, 233, 233, 0.856);
+    text-decoration: none;
+    justify-content: center;
+    
+}
+
+
+ul a:hover
+{
+    background-color: rgba(233, 233, 233, 0.856);
+    border-radius: 5px;
+    color:black;
+    height: 20px;
+}
+
+
+section p
+{
+    padding-top: 50px;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.60); 
+    border-radius: 0px 0px 10px 10px;
+    color:rgba(233, 233, 233, 0.856);
+    
+}   
+
+h4
+{
+    align-items: center;
+    float: left;
+    margin-top: 4px;
+}
+#mail
+{
+    padding-left: 10px;
+}
+
+
+#mail img
+{
+    margin-left: 15px;
+    height: 30px;
+    max-width: 100%;
+    padding-top: 5px;
+}
+
+
+/****************************************************************************
+**************************** page Galerie  ******************************
+****************************************************************************/
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+ .column {
+    float: left;
+    width: 60%;
+    padding: 10px;
+
+    
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.6;
+    max-width: 100px;
+    min-height: auto;
+    max-height: 100%; 
+    cursor: pointer;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: absolute;
+    left: 60%;
+    right: 5%;
+    top: 90px;
+    max-width: 70%;
+    min-width: auto;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: white;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.863);
+    max-width: 70%;
+   
+   }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    
+   
+
+  } 
