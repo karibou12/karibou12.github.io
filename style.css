@@ -1,16 +1,19 @@
 body
 {
-    /*background: url("images/fond_index1.jpg");*/
-    background: url(https://lh3.google.com/u/0/d/1TWWpyUwoYfSeffeKiJv9CsH1MBQSjqwm=w1398-h923-iv1);
-    background-size: 100%;
+  background: url("images/fond_index1.jpg");
+  /*background: url(https://lh3.google.com/u/0/d/1TWWpyUwoYfSeffeKiJv9CsH1MBQSjqwm=w1398-h923-iv1);*/
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  
 } 
 
 #main
 {
     position: fixed;
     width: 50%;
-    height: 500px;
-    background-color: rgba(169, 180, 175, 0.329);
+    height: 620px;
+    background:linear-gradient(.25turn, rgb(69, 136, 175), 70%, rgb(46, 108, 136) ) ;
     border-radius: 10px;
     top: 30px;
     left: 6%;
@@ -22,7 +25,7 @@ header
     flex-direction: row;  
     height: 60px;
     flex-basis: auto; 
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.60);
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -66,14 +69,13 @@ ul
 {
     display: flex;
     flex-grow: 1;
-    flex-direction: row-reverse;
-    order: inherit;
+   justify-content: flex-end;
     list-style: none;
     height: 20px;
     margin-top:40px;
-   }
+}
 
-ul :nth-child(1) { order: 2; }
+
 
 nav ul li a
 {
@@ -133,7 +135,6 @@ h4
     padding-top: 5px;
 }
 
-
 /****************************************************************************
 **************************** page Galerie  ******************************
 ****************************************************************************/
@@ -144,7 +145,7 @@ h4
     flex-direction: row;
 }
 
-/* The grid: Four equal columns that floats next to each other */
+/*The grid: Four equal columns that floats next to each other */
  .column {
     float: left;
     width: 60%;
@@ -173,37 +174,36 @@ h4
     clear: both;
   }
   
-  /* The expanding image container (positioning is needed to position the close button and the text) */
+  /* The expanding image container */
   .container {
     position: absolute;
+    display: none;
     left: 60%;
     right: 5%;
     top: 90px;
-    max-width: 70%;
+    max-width: 65%;
     min-width: auto;
   }
   
-  /* Expanding image text */
+  /* Expanding text image  */
   #imgtext {
     position: absolute;
     top: 15px;
     left: 15px;
     color: white;
     font-size: 16px;
-    background-color: rgba(0, 0, 0, 0.863);
+    background-color: rgba(0, 0, 0, 0.514);
     max-width: 70%;
-   
+    padding: 5px;
+    border-radius: 5px;    
    }
   
-  /* Closable button inside the image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-    
-   
-
-  } 
+  /* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
