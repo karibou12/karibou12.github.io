@@ -13,25 +13,31 @@ document.getElementById("header").appendChild(navElt);
 
 //Creation balise ul
 var ulElt = document.createElement("ul");
-ulElt.id= "ul";
+ulElt.id= "ulNav";
 document.getElementById("nav").appendChild(ulElt);
 
 
 // creation liste dans ul
 var Liste = ["Accueil","Galerie"];
 var maNavListe = ["index.html","galerie.html"];
+var classListe = ["btn","btn"];
 
 for (var i = 0; i < Liste.length; i++) {
     var lienElt = document.createElement("li"); 
-    lienElt.id = Liste[i];
+    lienElt.className = classListe[i];
     var lienA = document.createElement("a")
     lienA.textContent = Liste[i];
     lienA.href = maNavListe[i];
     // Ajoute un lien
-    document.getElementById("ul").appendChild(lienElt);
+    document.getElementById("ulNav").appendChild(lienElt);
     // Ajoute une balise <a>
-    document.getElementById(Liste[i]).appendChild(lienA);
+    document.getElementsByClassName(classListe[i])[i].appendChild(lienA);
 }
+
+
+
+
+
 
 
 //Galerie 
