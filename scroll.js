@@ -67,7 +67,7 @@ function scrollSection1() {
         }
 
 
-        if (document.body.scrollTop > 990 || document.documentElement.scrollTop > 990 ) {
+        if (document.body.scrollTop > 890 || document.documentElement.scrollTop > 890 ) {
             id2.style.marginTop = "-800px";
             id2.style.opacity = "0";
             id2.style.transition = "1s";
@@ -77,7 +77,7 @@ function scrollSection1() {
 // déplace contact onscroll
     let id3 = document.getElementById("id3");
 
-    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    if (document.body.scrollTop > 1100 || document.documentElement.scrollTop > 1100) {
         id3.style.marginTop = "0px";
         id3.style.opacity = "1";
         id3.style.transition = "1s";

@@ -1,3 +1,4 @@
+
 const gallery_db = [
         {
             "name":"cheminee",
@@ -76,6 +77,3 @@ for ( const elem in gallery_db) {
 // }
 
 // let BackInTheDayz = new Track("Back In Da Dayz","Bek Audio","BEK042.jpg");
-
-
-
