@@ -1,27 +1,20 @@
-
 //******** hover socials icon *********************** */
-function selectIcon(elem) {
-    let selected = elem;
-    let socialIcons = document.getElementsByClassName("socialIcon");
+function selectIcon(elem, name) {
 
-    for (let i = 0; i < socialIcons.length; i++) {
-        socialIcons[i].style.transform = "scale(1)";
-        socialIcons[i].style.filter = "grayscale(1)";
-        selected.style.transform = "scale(1.2)";
-        selected.style.filter = "grayscale(1)";
-    }
+    // let socialIcons = document.getElementsByClassName("socialIcon");
+    let stroke = document.getElementById(name);
+
+    // socialIcons[i].style.filter = "grayscale(1)";
+    elem.style.transform = "scale(1.25)";
+    stroke.style.animation = "dash 0.6s cubic-bezier(1,0,.82,-0.01) forwards";
+
+    // selected.style.filter = "grayscale(1)";
+    elem.addEventListener( "mouseout",() =>{
+        stroke.style.animation = "undash 0.4s cubic-bezier(0,.96,.56,1) forwards";
+        elem.style.transform = "scale(1)";
+    })
+
 }
-
-function unselectIcon() {
-    let socialIcons = document.getElementsByClassName("socialIcon");
-
-    for (let i = 0; i < socialIcons.length; i++) {
-        socialIcons[i].style.transform = "scale(1)";
-        socialIcons[i].style.filter = "grayscale(1)";
-
-    }
-}
-
 
 
 // Get the modal
@@ -31,7 +24,7 @@ function modal(evt) {
 
     const modal = document.getElementById("myModal");
     const captionText = document.getElementById("caption");
-    const imgMod= document.getElementById("img01");
+    const imgMod = document.getElementById("img01");
 
     imgMod.classList.replace('deZoom', 'modal-content');
     modal.classList.replace('deZoomMod', 'modal');
@@ -41,7 +34,7 @@ function modal(evt) {
     captionText.innerHTML = evt.children[0].alt;
 
     modalImg.style.animation = "zoom 1s ";
-    setTimeout(function() {
+    setTimeout(function () {
         modalImg.style.animation = '';
     }, 600)
 
@@ -51,13 +44,12 @@ function modal(evt) {
 
         if (evt.key === "Escape") {
             let modal = document.getElementById("myModal");
-            const imgMod= document.getElementById("img01");
-            imgMod.classList.replace('modal-content','deZoom');
-            modal.classList.replace('modal','deZoomMod');
+            const imgMod = document.getElementById("img01");
+            imgMod.classList.replace('modal-content', 'deZoom');
+            modal.classList.replace('modal', 'deZoomMod');
 
         }
     }
-
 
 
 }
@@ -72,19 +64,18 @@ function modalNav(evt) {
     }
     let index = tabImg.indexOf(modalImg.currentSrc);
 
-    if (evt.className === "prev"){
+    if (evt.className === "prev") {
         if (index === 0) {
             index = images.length;
         }
 
-        setTimeout(function() {
+        setTimeout(function () {
             modalImg.style.animation = "prev 0.4s ";
         }, 10)
 
-        setTimeout(function() {
+        setTimeout(function () {
             modalImg.style.animation = '';
         }, 400)
-
 
 
         index = index - 1;
@@ -92,10 +83,9 @@ function modalNav(evt) {
         captionText.innerHTML = images[index].alt;
 
 
-
     }
 
-    if (evt.className === "next"){
+    if (evt.className === "next") {
         if (index === images.length - 1) {
             index = -1;
         }
@@ -103,12 +93,12 @@ function modalNav(evt) {
         modalImg.src = images[index].currentSrc;
         captionText.innerHTML = images[index].alt;
 
-        setTimeout(function() {
+        setTimeout(function () {
             modalImg.style.animation = "next 0.4s";
         }, 10)
 
 
-        setTimeout(function() {
+        setTimeout(function () {
             modalImg.style.animation = '';
         }, 400)
 
@@ -119,15 +109,13 @@ function modalNav(evt) {
 
 
 // dezoom du modal quand on click sur la croix.
-function testAnim(){
+function testAnim() {
     let modal = document.getElementById("myModal");
-    const imgMod= document.getElementById("img01");
-    imgMod.classList.replace('modal-content','deZoom');
-    modal.classList.replace('modal','deZoomMod');
+    const imgMod = document.getElementById("img01");
+    imgMod.classList.replace('modal-content', 'deZoom');
+    modal.classList.replace('modal', 'deZoomMod');
 
 }
-
-
 
 
 function scrollWin(n) {

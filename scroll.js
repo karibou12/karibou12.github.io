@@ -21,6 +21,7 @@ window.onscroll = function() {scrollSection1()};
 // deplace présentation onscroll
 function scrollSection1() {
     let id1 = document.getElementById("id1");
+    console.log(document.documentElement.scrollTop);
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         id1.style.marginTop = "180px";
         id1.style.transition = "0.2s";
@@ -82,8 +83,7 @@ function scrollSection1() {
 
     for (let i = 0; i < ul_nav.length ; i++){
         if (document.body.scrollTop > 795 && document.body.scrollTop < 1600 || document.documentElement.scrollTop > 795 && document.documentElement.scrollTop < 1600 ) {
-            console.log("ul_nav[i]");
-            ul_nav[i].style.color = "black";
+           ul_nav[i].style.color = "black";
         } else {
             ul_nav[i].style.color = "white";
         }
