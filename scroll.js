@@ -16,7 +16,14 @@
 //     console.log( "----------------------");
 // }
 
-window.onscroll = function() {scrollSection1()};
+
+
+window.addEventListener('resize', function(){
+    if(window.innerWidth > 900){
+        window.onscroll = function() {scrollSection1()};
+    }
+});
+
 
 // deplace présentation onscroll
 function scrollSection1() {
@@ -88,10 +95,6 @@ function scrollSection1() {
             ul_nav[i].style.color = "white";
         }
     }
-
-
-
-
 
 }
 
