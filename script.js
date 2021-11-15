@@ -1,3 +1,40 @@
+//********menu Burger *********************** */
+
+const nav = document.querySelector('.navigation');
+const burger = document.querySelector('.burger');
+
+burger.addEventListener("click", () => {
+    burger.classList.toggle('clicked');
+});
+
+burger.addEventListener("click", () => {
+    if (nav.style.display === "block") {
+        nav.style.display = "none";
+    } else {
+        nav.style.display = "block";
+    }
+
+})
+
+const linavA = document.getElementsByClassName("li-navA");
+
+for (let i = 0; i < linavA.length; i++) {
+
+    linavA[i].addEventListener('click',()=>{
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+            burger.classList.toggle('clicked');
+        } else {
+            nav.style.display = "block";
+        }
+    })
+}
+
+
+
+
+
+
 //******** hover socials icon *********************** */
 function selectIcon(elem, name) {
 
