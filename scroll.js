@@ -4,20 +4,20 @@
 //     }
 // });
 
+console.log('b')
+
 window.onresize = function () {
     console.log("on rezise")
     if (window.innerWidth > 900) {
         window.onscroll = function () { scrollSection1() };
     }
-
 }
-window.onload = function () {
-    console.log("onload")
+
     if (window.innerWidth > 900) {
+        console.log('b')
         window.onscroll = function () { scrollSection1() };
     }
 
-}
 
 
 
