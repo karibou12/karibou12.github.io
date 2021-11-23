@@ -7,18 +7,20 @@ burger.addEventListener("click", () => {
     burger.classList.toggle('clicked');
 });
 
-burger.addEventListener("click", () => {
-    if (nav.style.display === "block") {
-        nav.style.display = "none";
-    } else {
-        nav.style.display = "block";
-    }
-
-})
-
 const linavA = document.getElementsByClassName("li-navA");
 
 for (let i = 0; i < linavA.length; i++) {
+
+    if (window.innerWidth < 900) {
+
+        burger.addEventListener("click", () => {
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+
+        })
 
     linavA[i].addEventListener('click',()=>{
         if (nav.style.display === "block") {
@@ -29,10 +31,7 @@ for (let i = 0; i < linavA.length; i++) {
         }
     })
 }
-
-
-
-
+}
 
 
 //******** hover socials icon *********************** */
@@ -67,8 +66,11 @@ function modal(evt) {
     modal.classList.replace('deZoomMod', 'modal');
     modal.style.display = "block";
 
+
     modalImg.src = evt.children[0].currentSrc;
-    captionText.innerHTML = evt.children[0].alt;
+    // captionText.innerHTML = evt.children[0].alt;
+    captionText.innerHTML = evt.children[2].innerHTML;
+    
 
     modalImg.style.animation = "zoom 1s ";
     setTimeout(function () {
@@ -145,6 +147,8 @@ function modalNav(evt) {
 }
 
 
+
+
 // dezoom du modal quand on click sur la croix.
 function testAnim() {
     let modal = document.getElementById("myModal");
@@ -154,14 +158,14 @@ function testAnim() {
 
 }
 
-
-function scrollWin(n) {
-    let ht = document.getElementById('s1').offsetHeight;
-    window.scrollTo({
-        top: ht * n,
-        left: 0,
-        behavior: 'smooth'
-    });
-}
-
-
+//
+// function scrollWin(n) {
+//     let ht = document.getElementById('s1').offsetHeight;
+//     window.scrollTo({
+//         top: ht * n,
+//         left: 0,
+//         behavior: 'smooth'
+//     });
+// }
+//
+//

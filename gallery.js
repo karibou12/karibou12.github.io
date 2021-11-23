@@ -1,52 +1,70 @@
-
 const gallery_db = [
-        {
-            "name":"cheminee",
-            "image":"./images/cheminee.jpg",
-            "alt":"renovation salon cheminée",
-            "description":"exemple de réalisation"
+    {
+        "id": "1",
+        "name": "cheminee",
+        "image": "images/pjpoulet/20avantapres.jpg",
+        "alt": "Rénovation de cuisine",
+        "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+        "gallery": [{
+            "id": "1",
+            "name": "cheminee",
+            "image": "images/pjpoulet/20avantapres.jpg",
+            "alt": "Rénovation de cuisine",
+            "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
         },
-        {
-            "name":"douche",
-            "image":"./images/douche.jpg",
-            "alt":"renovation douche",
-            "description":"exemple de réalisation"
-        },
-        {
-            "name":"escalier",
-            "image":"./images/escalier.jpg",
-            "alt":"renovation escalier",
-            "description":"exemple de réalisation"
-        },
-        {
-            "name":"sdb",
-            "image":"./images/sdb.jpg",
-            "alt":"renovation salle de bain",
-            "description":"exemple de réalisation"
-        },
-        {
-            "name":"cuisine",
-            "image":"./images/cuisine.jpg",
-            "alt":"renovation cuisine",
-            "description":"exemple de réalisation"
-        },
-        {
-            "name":"entree",
-            "image":"./images/entree.jpg",
-            "alt":"renovation entrée",
-            "description":"exemple de réalisation"
-        },
+            {
+                "id": "2",
+                "name": "cheminee",
+                "image": "images/pjpoulet/20avantapres.jpg",
+                "alt": "Rénovation de cuisine",
+                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "douche",
+        "image": "./images/douche.jpg",
+        "alt": "renovation douche",
+        "description": "exemple de réalisation"
+    },
+    {
+        "id": "3",
+        "name": "escalier",
+        "image": "./images/escalier.jpg",
+        "alt": "renovation escalier",
+        "description": "exemple de réalisation"
+    },
+    {
+        "id": "4",
+        "name": "sdb",
+        "image": "./images/sdb.jpg",
+        "alt": "renovation salle de bain",
+        "description": "exemple de réalisation"
+    },
+    {
+        "id": "5",
+        "name": "cuisine",
+        "image": "./images/cuisine.jpg",
+        "alt": "renovation cuisine",
+        "description": "exemple de réalisation"
+    },
+    {
+        "id": "6",
+        "name": "entree",
+        "image": "./images/entree.jpg",
+        "alt": "renovation entrée",
+        "description": "exemple de réalisation"
+    },
 
-    ]
-
-
+]
 
 
 // create card elem
-for ( const elem in gallery_db) {
+for (const elem in gallery_db) {
     let card = document.createElement('div');
     card.setAttribute('class', 'card');
-    card.onclick =  function () {
+    card.onclick = function () {
         modal(this);
     }
 
@@ -59,21 +77,17 @@ for ( const elem in gallery_db) {
     let cardDescription = document.createElement('p');
     cardDescription.textContent = gallery_db[elem].description;
 
+    let cardAlt = document.createElement('p');
+    cardAlt.textContent = gallery_db[elem].alt;
+
+
     document.getElementsByClassName('menu gallery')[0].appendChild(card);
     document.getElementsByClassName('card')[elem].appendChild(cardImg);
+    document.getElementsByClassName('card')[elem].appendChild(cardAlt);
     document.getElementsByClassName('card')[elem].appendChild(cardDescription);
+    cardDescription.style.display = "none";
 
 }
 
 
-// class Track {
-//     constructor(name, label, image) {
 
-//         this.name = name;
-//         this.label = label;
-//         this.image = image;
-
-//     }
-// }
-
-// let BackInTheDayz = new Track("Back In Da Dayz","Bek Audio","BEK042.jpg");

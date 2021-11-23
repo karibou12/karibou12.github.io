@@ -4,21 +4,19 @@
 //     }
 // });
 
-console.log('b')
-
 window.onresize = function () {
-    console.log("on rezise")
     if (window.innerWidth > 900) {
-        window.onscroll = function () { scrollSection1() };
+        window.onscroll = function () {
+            scrollSection1()
+        };
     }
 }
 
-    if (window.innerWidth > 900) {
-        console.log('b')
-        window.onscroll = function () { scrollSection1() };
-    }
-
-
+if (window.innerWidth > 900) {
+    window.onscroll = function () {
+        scrollSection1()
+    };
+}
 
 
 // deplace présentation onscroll
@@ -38,9 +36,6 @@ function scrollSection1() {
         id1.style.opacity = "1";
         id1.style.transition = "0.6s";
     }
-
-
-
 
 
     // déplace gallery onscroll
@@ -78,7 +73,6 @@ function scrollSection1() {
         id3.style.opacity = "0";
         id3.style.transition = "1s";
     }
-
 
 
     // change header color quand passage section 2
