@@ -7,19 +7,37 @@ gallery_db = [
         "alt": "Rénovation de cuisine",
         "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
         "modalGallery": [{
-            "id": "1",
-            "name": "cheminee",
-            "image": "images/pjpoulet/AV 20avantapres.jpg",
-            "alt": "Rénovation de cuisine",
-            "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+                "id": "1",
+                "image": "images/pjpoulet/AV 20avantapres.jpg",
+                "alt": "Rénovation de cuisine",
+                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
         },
             {
                 "id": "2",
-                "name": "cheminee",
+                "image": "images/pjpoulet/AV entree.jpg",
+                "alt": "Rénovation de cuisine",
+                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            },
+            {
+                "id": "3",
                 "image": "images/pjpoulet/23.jpg",
                 "alt": "Rénovation de cuisine",
                 "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
-            }
+            },
+            {
+                "id": "4",
+                "image": "images/pjpoulet/14.jpg",
+                "alt": "Rénovation de cuisine",
+                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            },
+            {
+                "id": "5",
+                "image": "images/pjpoulet/16.jpg",
+                "alt": "Rénovation de cuisine",
+                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            },
+
+
         ]
     },
     {
@@ -33,14 +51,14 @@ gallery_db = [
             "name": "cheminee",
             "image": "./images/douche.jpg",
             "alt": "Rénovation de cuisine",
-            "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            "description": "Rénovation de douche",
         },
             {
                 "id": "2",
                 "name": "cheminee",
                 "image": "images/pjpoulet/23.jpg",
                 "alt": "Rénovation de cuisine",
-                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+                "description": "Rénovation de douche",
             }
         ]
     },
@@ -55,14 +73,14 @@ gallery_db = [
             "name": "cheminee",
             "image": "./images/escalier.jpg",
             "alt": "Rénovation de cuisine",
-            "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            "description": "Modification de l'escalier",
         },
             {
                 "id": "2",
                 "name": "cheminee",
                 "image": "images/pjpoulet/23.jpg",
                 "alt": "Rénovation de cuisine",
-                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+                "description": "Modification de l'escalier",
             }
         ]
     },
@@ -77,14 +95,14 @@ gallery_db = [
             "name": "cheminee",
             "image": "./images/sdb.jpg",
             "alt": "Rénovation de cuisine",
-            "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            "description": "Refonte de la sdb",
         },
             {
                 "id": "2",
                 "name": "cheminee",
                 "image": "images/pjpoulet/23.jpg",
                 "alt": "Rénovation de cuisine",
-                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+                "description": "Refonte de la sdb",
             }
         ]
     },
@@ -99,14 +117,14 @@ gallery_db = [
             "name": "cheminee",
             "image": "./images/cuisine.jpg",
             "alt": "Rénovation de cuisine",
-            "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            "description": "Réhabilitation de la cuisine",
         },
             {
                 "id": "2",
                 "name": "cheminee",
                 "image": "images/pjpoulet/23.jpg",
                 "alt": "Rénovation de cuisine",
-                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+                "description": "Réhabilitation de la cuisine",
             }
         ]
     },
@@ -121,14 +139,14 @@ gallery_db = [
             "name": "cheminee",
             "image": "./images/entree.jpg",
             "alt": "Rénovation de cuisine",
-            "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            "description": "Modernisation des escaliers",
         },
             {
                 "id": "2",
                 "name": "cheminee",
                 "image": "images/pjpoulet/23.jpg",
                 "alt": "Rénovation de cuisine",
-                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+                "description": "Modernisation des escaliers",
             }
         ]
     },

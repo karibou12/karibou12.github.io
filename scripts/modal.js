@@ -1,7 +1,5 @@
 import {gallery_db} from "./list_projects.js";
-
-
-export {modal, modalClose, modalNav, getIndex};
+export {modal, modalClose, modalNav};
 
 
 // navigation de la galery modal
@@ -44,7 +42,7 @@ function modal(evt) {
     //
 
     modalImg.src = gallery_db[index].modalGallery[0].image;
-    // captionText.innerHTML = gallery_db[0].modalGallery[0].description;
+    captionText.innerHTML = gallery_db[index].modalGallery[0].description;
 
 
     modalImg.style.animation = "zoom 1s ";
@@ -65,23 +63,23 @@ function modal(evt) {
     }
 }
 
-
-function getIndex(evt) {
-    const images = document.getElementsByClassName('img');
-    let tabImg = [];
-
-    for (let i = 0; i < images.length; i++) {
-        tabImg.push(images[i].currentSrc);
-    }
-
-    console.log(tabImg.indexOf(modalImg.src) + 'bla')
-    return tabImg.indexOf(modalImg.currentSrc);
-}
+//
+// function getIndex(evt) {
+//     const images = document.getElementsByClassName('img');
+//     let tabImg = [];
+//
+//     for (let i = 0; i < images.length; i++) {
+//         tabImg.push(images[i].currentSrc);
+//     }
+//
+//     console.log(tabImg.indexOf(modalImg.src) + 'bla')
+//     return tabImg.indexOf(modalImg.currentSrc);
+// }
 
 
 function modalNav() {
     const captionText = document.getElementById("caption");
-    const images = document.getElementsByClassName('img');
+    // const images = document.getElementsByClassName('img');
     // let tabImg = [];
     //
     // for (let i = 0; i < images.length; i++) {
@@ -129,6 +127,19 @@ function modalNav() {
         }, 400)
     }
 
+
+}
+
+// dezoom du modal quand on click sur la croix.
+    function modalClose() {
+        let modal = document.getElementById("myModal");
+        const imgMod = document.getElementById("img01");
+        imgMod.classList.replace('modal-content', 'deZoom');
+        modal.classList.replace('modal', 'deZoomMod');
+    }
+
+
+
     // if (this.className === "prev") {
     //     if (index === 0) {
     //         index = images.length;
@@ -166,13 +177,4 @@ function modalNav() {
     // }
 
 
-}
 
-
-// dezoom du modal quand on click sur la croix.
-function modalClose() {
-    let modal = document.getElementById("myModal");
-    const imgMod = document.getElementById("img01");
-    imgMod.classList.replace('modal-content', 'deZoom');
-    modal.classList.replace('modal', 'deZoomMod');
-}
