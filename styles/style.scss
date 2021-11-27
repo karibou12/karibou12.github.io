@@ -212,7 +212,7 @@ header {
     background-position: center;
     background-size: cover;
     height: 800px;
-    background-image: url("images/fond.jpg");
+    background-image: url("../images/fond.jpg");
     display: flex;
     justify-content: center;
 }
@@ -260,7 +260,7 @@ header {
     display: flex;
     justify-content: center;
     z-index: 1;
-    background-image: url("images/fond3.jpg");
+    background-image: url("../images/fond3.jpg");
     background-color: rgba(0, 0, 0, 0.7);
     //position: relative;
 
@@ -323,7 +323,7 @@ header {
     background-position: center;
     background-size: cover;
     height: 700px;
-    background-image: url("images/fond5.jpg");
+    background-image: url("../images/fond5.jpg");
     display: flex;
     justify-content: center;
     color: $color;

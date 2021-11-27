@@ -210,7 +210,7 @@ header .navigation .logo-lien {
   background-position: center;
   background-size: cover;
   height: 800px;
-  background-image: url("images/fond.jpg");
+  background-image: url("../images/fond.jpg");
   display: flex;
   justify-content: center;
 }
@@ -250,7 +250,7 @@ header .navigation .logo-lien {
   display: flex;
   justify-content: center;
   z-index: 1;
-  background-image: url("images/fond3.jpg");
+  background-image: url("../images/fond3.jpg");
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -299,7 +299,7 @@ header .navigation .logo-lien {
   background-position: center;
   background-size: cover;
   height: 700px;
-  background-image: url("images/fond5.jpg");
+  background-image: url("../images/fond5.jpg");
   display: flex;
   justify-content: center;
   color: rgba(231, 221, 221, 0.98);

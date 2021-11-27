@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="images/logoV2.jpg" type="image/x-icon">
 
     <!--        lien stylesheet map-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
           integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
           crossorigin=""/>
-    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="styles/map.css">
     <title>Mangata V2</title>
 
 </head>
@@ -129,9 +129,9 @@
 <!-- The Modal -->
 <div id="myModal" class="modal">
     <div class="modalNavContainer">
-        <a class="prev" onclick="modalNav(this)">&#10094;</a>
-        <span class="close" onclick="testAnim()">&times;</span>
-        <a class="next" onclick="modalNav(this)">&#10095;</a>
+        <a class="prev" >&#10094;</a>
+        <span class="close">&times;</span>
+        <a class="next">&#10095;</a>
     </div>
     <img class="modal-content" id="img01" src="" alt="">
     <div id="caption"></div>
@@ -148,11 +148,12 @@
 
 
 
-<script type="text/javascript" src="script.js"></script>
-<script type="text/javascript" src="gallery.js"></script>
-<script type="text/javascript" src="scroll.js"></script>
-<script type="text/javascript" src="map.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script type="text/javascript" src="scripts/scroll.js"></script>
+<script type="text/javascript" src="scripts/map.js"></script>
 
+<script type="module" src="scripts/modal.js"></script>
+<script type="module" src="scripts/gallery.js"></script>
 
 
 </body>
