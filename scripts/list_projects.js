@@ -3,41 +3,51 @@ gallery_db = [
     {
         "id": "1",
         "name": "cheminee",
-        "image": "images/pjpoulet/20avantapres.jpg",
+        "image": "images/pjpoulet/presentation.jpg",
         "alt": "Rénovation de cuisine",
         "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
         "modalGallery": [{
-                "id": "1",
-                "image": "images/pjpoulet/AV20 avantapres.jpg",
-                "alt": "Rénovation de cuisine",
-                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            "id": "1",
+            "image": "images/pjpoulet/presentation.jpg",
+            "alt": "Rénovation de cuisine",
+            "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
         },
             {
                 "id": "2",
-                "image": "images/pjpoulet/AV entree.jpg",
+                "image": "images/pjpoulet/AV20 avantapres.jpg",
                 "alt": "Rénovation de cuisine",
                 "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
             },
             {
                 "id": "3",
-                "image": "images/pjpoulet/23.jpg",
+                "image": "images/pjpoulet/AV entree.jpg",
                 "alt": "Rénovation de cuisine",
                 "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
             },
             {
                 "id": "4",
-                "image": "images/pjpoulet/14.jpg",
+                "image": "images/pjpoulet/23.jpg",
                 "alt": "Rénovation de cuisine",
                 "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
             },
             {
                 "id": "5",
+                "image": "images/pjpoulet/14.jpg",
+                "alt": "Rénovation de cuisine",
+                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            },
+            {
+                "id": "6",
                 "image": "images/pjpoulet/16.jpg",
                 "alt": "Rénovation de cuisine",
                 "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
             },
-
-
+            {
+                "id": "7",
+                "image": "images/pjpoulet/20avantapres.jpg",
+                "alt": "Rénovation de cuisine",
+                "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
+            }
         ]
     },
     {

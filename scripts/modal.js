@@ -1,4 +1,5 @@
 import {gallery_db} from "./list_projects.js";
+
 export {modal, modalClose, modalNav};
 
 
@@ -25,7 +26,6 @@ function modal(evt) {
         tabImg.push(images[i].currentSrc);
     }
     index = tabImg.indexOf(evt.children[0].currentSrc);
-
 
 
     const modal = document.getElementById("myModal");
@@ -63,19 +63,6 @@ function modal(evt) {
     }
 }
 
-//
-// function getIndex(evt) {
-//     const images = document.getElementsByClassName('img');
-//     let tabImg = [];
-//
-//     for (let i = 0; i < images.length; i++) {
-//         tabImg.push(images[i].currentSrc);
-//     }
-//
-//     console.log(tabImg.indexOf(modalImg.src) + 'bla')
-//     return tabImg.indexOf(modalImg.currentSrc);
-// }
-
 
 function modalNav() {
     const captionText = document.getElementById("caption");
@@ -88,11 +75,10 @@ function modalNav() {
     // let index = tabImg.indexOf(modalImg.currentSrc);
 
     if (this.className === "prev") {
-        indexMod -= 1;
         if (indexMod === 0) {
             indexMod = gallery_db[index].modalGallery.length;
-
         }
+        indexMod = indexMod - 1;
 
         modalImg.src = gallery_db[index].modalGallery[indexMod].image;
         captionText.innerHTML = gallery_db[index].modalGallery[indexMod].description;
@@ -108,12 +94,10 @@ function modalNav() {
 
 
     if (this.className === "next") {
-
-        indexMod = indexMod + 1;
-        if (indexMod === gallery_db[index].modalGallery.length) {
-            indexMod = 0;
+        if (indexMod === gallery_db[index].modalGallery.length -1 ) {
+            indexMod = -1;
         }
-
+        indexMod = indexMod + 1;
         modalImg.src = gallery_db[index].modalGallery[indexMod].image;
         captionText.innerHTML = gallery_db[index].modalGallery[indexMod].description;
 
@@ -131,50 +115,63 @@ function modalNav() {
 }
 
 // dezoom du modal quand on click sur la croix.
-    function modalClose() {
-        let modal = document.getElementById("myModal");
-        const imgMod = document.getElementById("img01");
-        imgMod.classList.replace('modal-content', 'deZoom');
-        modal.classList.replace('modal', 'deZoomMod');
-    }
+function modalClose() {
+    let modal = document.getElementById("myModal");
+    const imgMod = document.getElementById("img01");
+    imgMod.classList.replace('modal-content', 'deZoom');
+    modal.classList.replace('modal', 'deZoomMod');
+}
 
 
-
-    // if (this.className === "prev") {
-    //     if (index === 0) {
-    //         index = images.length;
-    //     }
-    //     setTimeout(function () {
-    //         modalImg.style.animation = "prev 0.4s ";
-    //     }, 10)
-    //
-    //     setTimeout(function () {
-    //         modalImg.style.animation = '';
-    //     }, 400)
-    //
-    //     index = index - 1;
-    //     modalImg.src = tabImg[index];
-    //     captionText.innerHTML = images[index].alt;
-    // }
+//
+// function getIndex(evt) {
+//     const images = document.getElementsByClassName('img');
+//     let tabImg = [];
+//
+//     for (let i = 0; i < images.length; i++) {
+//         tabImg.push(images[i].currentSrc);
+//     }
+//
+//     console.log(tabImg.indexOf(modalImg.src) + 'bla')
+//     return tabImg.indexOf(modalImg.currentSrc);
+// }
 
 
-    // if (this.className === "next") {
-    //
-    //     if (index === images.length - 1) {
-    //         index = -1;
-    //     }
-    //     index = index + 1;
-    //     modalImg.src = images[index].currentSrc;
-    //     captionText.innerHTML = images[index].alt;
-    //
-    //     setTimeout(function () {
-    //         modalImg.style.animation = "next 0.4s";
-    //     }, 10)
-    //
-    //     setTimeout(function () {
-    //         modalImg.style.animation = '';
-    //     }, 400)
-    // }
+// if (this.className === "prev") {
+//     if (index === 0) {
+//         index = images.length;
+//     }
+//     setTimeout(function () {
+//         modalImg.style.animation = "prev 0.4s ";
+//     }, 10)
+//
+//     setTimeout(function () {
+//         modalImg.style.animation = '';
+//     }, 400)
+//
+//     index = index - 1;
+//     modalImg.src = tabImg[index];
+//     captionText.innerHTML = images[index].alt;
+// }
+
+
+// if (this.className === "next") {
+//
+//     if (index === images.length - 1) {
+//         index = -1;
+//     }
+//     index = index + 1;
+//     modalImg.src = images[index].currentSrc;
+//     captionText.innerHTML = images[index].alt;
+//
+//     setTimeout(function () {
+//         modalImg.style.animation = "next 0.4s";
+//     }, 10)
+//
+//     setTimeout(function () {
+//         modalImg.style.animation = '';
+//     }, 400)
+// }
 
 
 

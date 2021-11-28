@@ -41,8 +41,8 @@ for (const elem in gallery_db) {
     document.getElementsByClassName('menu gallery')[0].appendChild(card);
     document.getElementsByClassName('card')[elem].appendChild(cardImg);
     document.getElementsByClassName('card')[elem].appendChild(cardAlt);
-    document.getElementsByClassName('card')[elem].appendChild(cardDescription);
-    cardDescription.style.display = "none";
+    // document.getElementsByClassName('card')[elem].appendChild(cardDescription);
+    // cardDescription.style.display = "none";
 
 }
 
