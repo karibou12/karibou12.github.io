@@ -8,13 +8,13 @@ gallery_db = [
         "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
         "modalGallery": [{
                 "id": "1",
-                "image": "images/pjpoulet/AV_20avantapres.jpg",
+                "image": "images/pjpoulet/AV20avantapres.jpg",
                 "alt": "Rénovation de cuisine",
                 "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
         },
             {
                 "id": "2",
-                "image": "images/pjpoulet/AV_entree.jpg",
+                "image": "images/pjpoulet/AVentree.jpg",
                 "alt": "Rénovation de cuisine",
                 "description": "La cuisine et l'espace salon ont été créés à la place de l'ancien garage",
             },
