@@ -14,7 +14,8 @@ next.addEventListener('click', modalNav);
 
 
 var indexMod = 0;
-var index;
+var index = 0;
+
 // Get the modal
 const modalImg = document.getElementById("img01");
 
@@ -61,6 +62,7 @@ function modal(evt) {
             modal.classList.replace('modal', 'deZoomMod');
         }
     }
+
 }
 
 
@@ -73,6 +75,7 @@ function modalNav() {
     //     tabImg.push(images[i].currentSrc);
     // }
     // let index = tabImg.indexOf(modalImg.currentSrc);
+
 
     if (this.className === "prev") {
         if (indexMod === 0) {
@@ -120,21 +123,22 @@ function modalClose() {
     const imgMod = document.getElementById("img01");
     imgMod.classList.replace('modal-content', 'deZoom');
     modal.classList.replace('modal', 'deZoomMod');
+    indexMod = 0;
 }
 
 
-//
-// function getIndex(evt) {
-//     const images = document.getElementsByClassName('img');
-//     let tabImg = [];
-//
-//     for (let i = 0; i < images.length; i++) {
-//         tabImg.push(images[i].currentSrc);
-//     }
-//
-//     console.log(tabImg.indexOf(modalImg.src) + 'bla')
-//     return tabImg.indexOf(modalImg.currentSrc);
-// }
+
+function getIndex(evt) {
+    const images = document.getElementsByClassName('img');
+    let tabImg = [];
+
+    for (let i = 0; i < images.length; i++) {
+        tabImg.push(images[i].currentSrc);
+    }
+
+    console.log(tabImg.indexOf(modalImg.src) + 'bla')
+    return tabImg.indexOf(modalImg.currentSrc);
+}
 
 
 // if (this.className === "prev") {
